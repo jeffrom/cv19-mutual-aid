@@ -1,3 +1,7 @@
 money:
-  - name: Santa Clara County COVID-19 Financial Solidarity
+  - key: sc-financial-solidarity
+    name: Santa Clara County COVID-19 Financial Solidarity
     href: https://archive408.com/2020/03/15/santa-clara-county-covid-19-financial-solidarity
+  - key: safety-net-artist-fund
+    name: The Safety Net Fund for Artists
+    href: https://medium.com/@safetynet/the-safety-net-fund-20040273d291

@@ -1,26 +1,7 @@
 import Head from 'next/head'
 
+import { ResourceLinks } from '../../../components/ResourceLinks'
 import resourceLinks from './resource-links.yml'
-
-const renderResourceLinks = (links) => links.map(({name, href}) => (
-  <li>
-    <a href="{href}">{name}</a>
-  </li>
-))
-
-const renderResources = (links) => {
-  const categories = Object.keys(links)
-  categories.sort()
-
-  return categories.map((category) => (
-    <div>
-      <h3>{category}</h3>
-      <ul>
-        {renderResourceLinks(links[category])}
-      </ul>
-    </div>
-  ))
-}
 
 const BayArea = () => (
   <div className="container">
@@ -32,7 +13,7 @@ const BayArea = () => (
     <main>
       <div>
         <h2>Resources</h2>
-        {renderResources(resourceLinks)}
+        <ResourceLinks links={resourceLinks} />
       </div>
     </main>
 
