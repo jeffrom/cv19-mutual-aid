@@ -1,29 +1,23 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
-const Home = () => (
+import { ResourceLinks } from './ResourceLinks'
+
+export const Region = ({region, resourceLinks}) => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>{region} - CV19 Mutual Aid</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Find resources in your area below.
-      </p>
-
-      <Link href="/region/bay-area">
-        <a>bay area</a>
-      </Link>
+      <div>
+        <h2>Resources</h2>
+        <ResourceLinks links={resourceLinks} />
+      </div>
     </main>
 
     <footer>
-      CV19 Mutual Aid
+      bork footer
     </footer>
 
     <style jsx>{`
@@ -168,5 +162,3 @@ const Home = () => (
     `}</style>
   </div>
 )
-
-export default Home
