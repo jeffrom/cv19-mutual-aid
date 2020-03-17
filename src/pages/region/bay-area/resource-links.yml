@@ -1,3 +1,22 @@
+mutual-aid:
+  - key: sf-bay-mutual-aid
+    name: SF Bay Area Mutual Aid
+    href: https://docs.google.com/forms/d/e/1FAIpQLSeRdZabsQN36mtCTfYHZ1unT1U0pLpNqSC7MXaMjNqQAeVLQw/viewform
+  - key: east-bay-disabled-folks
+    name: East Bay Disabled Folks Support
+    href: https://docs.google.com/forms/d/e/1FAIpQLSc7LLhYN243k6xFlmQH26lAN9EoRXgEQGrghbqL8Ttc1K8YNA/viewform
+  - key: south-bay-mutual-aid
+    name: South Bay Mutual Aid
+    href: bit.ly/sbma-intake
+  - key: south-bay-mutual-aid-es
+    name: South Bay Mutual Aid (Español)
+    href: bit.ly/sbma-intake-s
+
+food:
+  - key: peoples-breakfast-oakland
+    name: People's Breakfast Oakland
+    href: https://twitter.com/PeoplesBreakOak
+
 money:
   - key: sc-financial-solidarity
     name: Santa Clara County COVID-19 Financial Solidarity
@@ -5,3 +24,10 @@ money:
   - key: safety-net-artist-fund
     name: The Safety Net Fund for Artists
     href: https://medium.com/@safetynet/the-safety-net-fund-20040273d291
+  - key: beverage-workers-relief-fund
+    name: Beverage Workers Relief Fund
+    href: https://usbgfoundation.networkforgood.com/projects/95524-covid-19-relief-campaign
+  - key: qt-workers-artists-twitter-thread
+    name: Queer / Trans workers & artists twitter thread
+    href: https://twitter.com/fransquishco/status/1238213057483927552
+

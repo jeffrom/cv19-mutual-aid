@@ -1,4 +1,3 @@
-
 const ResourceListItem = ({name, href}) => (
   <li>
     <a href={href}>{name}</a>
@@ -19,7 +18,7 @@ export const ResourceLinks = ({links}) => {
 
   return categories.map((category) => (
     <>
-      <h3>{category}</h3>
+      <h3>{category.replace(/[-_]/g, ' ')}</h3>
       <ResourceLinkList category={category} links={links[category]} />
     </>
   ))
