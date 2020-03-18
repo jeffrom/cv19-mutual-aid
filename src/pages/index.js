@@ -4,13 +4,13 @@ import Link from 'next/link'
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>CV-19 Mutual Aid Resource Directory</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        COVID-19 Mutual Aid
       </h1>
 
       <p className="description">
