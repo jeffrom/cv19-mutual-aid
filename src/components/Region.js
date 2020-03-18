@@ -17,7 +17,7 @@ export const Region = ({region, resourceLinks}) => (
     </main>
 
     <footer>
-      bork footer
+      CV19 Mutual Aid
     </footer>
 
     <style jsx>{`
