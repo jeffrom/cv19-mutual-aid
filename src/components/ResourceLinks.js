@@ -1,3 +1,7 @@
+const keyFromName = (name) => {
+  return name.toLowerCase().replace(/ +/g, '-')
+}
+
 const ResourceListItem = ({name, href}) => (
   <li>
     <a href={href}>{name}</a>
@@ -6,8 +10,8 @@ const ResourceListItem = ({name, href}) => (
 
 const ResourceLinkList = ({category, links}) => (
   <ul>
-    {links.map(({key, name, href}) => (
-      <ResourceListItem key={key} name={name} href={href} />
+    {links.map(({name, href}) => (
+      <ResourceListItem key={keyFromName(name)} name={name} href={href} />
     ))}
   </ul>
 )
