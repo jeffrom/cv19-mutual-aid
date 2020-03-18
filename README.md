@@ -4,7 +4,7 @@ This repository is the source of the [CV19 Mutual Aid Directory](https://cv19-mu
 
 ## Add a Resource
 
-To add a resource, [create an issue](https://github.com/jeffrom/cv19-mutual-aid/issues/new) with information about your resource, including the region served and URL. If you feel comfortable writing a bit of code, feel free to make a pull request.
+To add a resource, [create an issue](https://github.com/jeffrom/cv19-mutual-aid/issues/new) with information about your resource, including the region served and URL. If you feel comfortable writing code, please feel free to make a pull request, however if you want to make changes beyond basic adding or editing of resources, please make an issue first so your plans can be discussed.
 
 ## Develop
 
