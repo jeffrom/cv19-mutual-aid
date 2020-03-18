@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { regions } from './region/all.yml'
+import regions from './region/all.yml'
 
-const RegionLinks = () => {
-  return regions.map(({name}) => {
+const SubRegionLinks = ({subregions}) => {
+  return subregions.map(({name}) => {
     const hrefSuffix = name.toLowerCase().replace(/ +/g, '-')
     const href = `/region/${hrefSuffix}`
     return (
@@ -13,6 +13,18 @@ const RegionLinks = () => {
       </Link>
     )
   })
+}
+
+const RegionLinks = () => {
+  const states = Object.keys(regions)
+  states.sort()
+
+  return states.map((state) => (
+    <>
+      <h2>{state}</h2>
+      <SubRegionLinks subregions={regions[state]} />
+    </>
+  ))
 }
 
 const Home = () => (
