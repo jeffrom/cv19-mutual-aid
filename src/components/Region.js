@@ -10,6 +10,7 @@ export const Region = ({region, resourceLinks}) => (
     </Head>
 
     <main>
+      <h1>{region}</h1>
       <div>
         <h2>Resources</h2>
         <ResourceLinks links={resourceLinks} />

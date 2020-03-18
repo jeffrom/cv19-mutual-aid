@@ -1,6 +1,20 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+import { regions } from './region/all.yml'
+
+const RegionLinks = () => {
+  return regions.map(({name}) => {
+    const hrefSuffix = name.toLowerCase().replace(/ +/g, '-')
+    const href = `/region/${hrefSuffix}`
+    return (
+      <Link href={href}>
+        <a>{name}</a>
+      </Link>
+    )
+  })
+}
+
 const Home = () => (
   <div className="container">
     <Head>
@@ -17,9 +31,7 @@ const Home = () => (
         Find resources in your area below.
       </p>
 
-      <Link href="/region/bay-area">
-        <a>bay area</a>
-      </Link>
+      <RegionLinks />
     </main>
 
     <footer>
