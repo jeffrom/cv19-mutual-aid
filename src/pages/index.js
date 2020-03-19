@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import regions from './region/all.yml'
+import generalResources from './general-resources.yml'
 
 const SubRegionLinks = ({subregions}) => {
   return subregions.map(({name}) => {
@@ -21,7 +22,7 @@ const RegionLinks = () => {
 
   return states.map((state) => (
     <>
-      <h2>{state}</h2>
+      <h3>{state}</h3>
       <SubRegionLinks subregions={regions[state]} />
     </>
   ))
@@ -30,7 +31,7 @@ const RegionLinks = () => {
 const Home = () => (
   <div className="container">
     <Head>
-      <title>CV-19 Mutual Aid Resource Directory</title>
+      <title>CV19 Mutual Aid Resource Directory</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
@@ -44,6 +45,12 @@ const Home = () => (
       </p>
 
       <RegionLinks />
+
+      <h2>general resources</h2>
+
+      {generalResources.resources.map(({name, href}) => (
+        <a href={href}>{name}</a>
+      ))}
     </main>
 
     <footer>
@@ -86,22 +93,6 @@ const Home = () => (
         display: flex;
         justify-content: center;
         align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
       }
 
       .title {
