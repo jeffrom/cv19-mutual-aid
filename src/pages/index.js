@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+import { Footer } from '../components/Footer'
+
 import regions from './region/all.yml'
 import generalResources from './general-resources.yml'
 
@@ -53,9 +55,7 @@ const Home = () => (
       ))}
     </main>
 
-    <footer>
-      CV19 Mutual Aid
-    </footer>
+    <Footer />
 
     <style jsx>{`
       .container {
@@ -72,25 +72,6 @@ const Home = () => (
         flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
         justify-content: center;
         align-items: center;
       }
