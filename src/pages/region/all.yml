@@ -1,3 +1,9 @@
+US:
+  - name: nationwide
+
 california:
   - name: los angeles
-  - name: bay area
+  - name: bay areawide
+  - name: san francisco
+  - name: east bay
+  - name: south bay
